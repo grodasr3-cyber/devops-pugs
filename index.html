@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pugs & Bulldogs Franceses</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #f8f1ea, #f3e5d8);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #8B5E3C, #D2B48C);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #d1d5db;
+    }
+
+    nav {
+      background: #5C4033;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #F4D03F;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #5C4033;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+      color: #5C4033;
+    }
+
+    .info-section {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      margin-top: 40px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .info-section h2 {
+      margin-bottom: 20px;
+      color: #5C4033;
+    }
+
+    .info-section p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .stat-box {
+      background: linear-gradient(135deg, #5C4033, #8B5E3C);
+      color: white;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .stat-box h3 {
+      font-size: 2rem;
+      color: #F4D03F;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #5C4033, #8B5E3C);
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+    }
+
+    @media(max-width:768px){
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="backdrop-filter: blur(5px); background: rgba(0,0,0,0.15); padding: 30px; border-radius: 20px; max-width: 850px; margin: auto;">
+    <h1>Pugs & Bulldogs Franceses</h1>
+    <p>Conociendo dos de las razas más populares y adorables del mundo canino</p>
+      </div>
+  </header>
+
+  <nav>
+    <a href="#pugs">Pugs</a>
+    <a href="#bulldogs">Bulldog Francés</a>
+    <a href="#cuidados">Cuidados</a>
+    <a href="#datos">Datos</a>
+  </nav>
+
+  <div class="container">
+
+    <h2 class="section-title">Razas Destacadas</h2>
+
+    <div class="cards">
+
+      <div class="card" id="pugs">
+        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop" alt="Pug">
+        <div class="card-content">
+          <h3>Pug</h3>
+          <p>
+            El Pug es una raza pequeña reconocida por su cara arrugada, ojos grandes y personalidad amigable.
+            Son perros muy sociables, cariñosos y excelentes compañeros familiares. A pesar de su tamaño,
+            tienen mucha energía y disfrutan pasar tiempo con sus dueños.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" id="bulldogs">
+        <img src="https://images.unsplash.com/photo-1583511655826-05700d52f4d9?q=80&w=1200&auto=format&fit=crop" alt="Bulldog Francés">
+        <div class="card-content">
+          <h3>Bulldog Francés</h3>
+          <p>
+            El Bulldog Francés es conocido por sus orejas tipo murciélago y su carácter juguetón.
+            Es una de las razas más populares actualmente debido a su tamaño compacto, inteligencia
+            y facilidad para adaptarse a apartamentos y hogares pequeños.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="info-section" id="cuidados">
+      <h2>Cuidados y Características</h2>
+
+      <p>
+        Tanto los Pugs como los Bulldogs Franceses pertenecen a las razas braquicéfalas, lo que significa
+        que poseen un hocico corto. Debido a esto, requieren cuidados especiales relacionados con la respiración,
+        especialmente en climas muy calurosos o durante actividades físicas intensas.
+      </p>
+
+      <p>
+        Estas razas necesitan revisiones veterinarias frecuentes, una alimentación equilibrada y rutinas de ejercicio
+        moderadas. También es importante limpiar sus pliegues faciales para evitar infecciones y mantener una higiene adecuada.
+      </p>
+
+      <p>
+        Los Pugs suelen ser más tranquilos y extremadamente afectuosos con sus dueños, mientras que el Bulldog Francés
+        destaca por ser más juguetón, curioso y protector. Ambos perros son excelentes opciones para familias,
+        personas solteras y hogares pequeños.
+      </p>
+
+      <p>
+        En cuanto a entrenamiento, ambas razas responden mejor al refuerzo positivo. Son inteligentes,
+        aunque pueden ser un poco tercos. La paciencia y la constancia son fundamentales para educarlos correctamente.
+      </p>
+    </div>
+
+    <div class="stats" id="datos">
+      <div class="stat-box">
+        <h3>12-15</h3>
+        <p>Años de vida promedio del Pug</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>10-14</h3>
+        <p>Años de vida promedio del Bulldog Francés</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>100%</h3>
+        <p>Compañía y cariño para la familia</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>Top 10</h3>
+        <p>Razas más populares del mundo</p>
+      </div>
+    </div>
+
+    <div class="info-section">
+      <h2>Importancia de las Mascotas en la Sociedad</h2>
+
+      <p>
+        Las mascotas cumplen un papel muy importante en la vida de las personas. Además de brindar compañía,
+        ayudan a reducir el estrés, mejorar el estado de ánimo y fortalecer vínculos emocionales.
+      </p>
+
+      <p>
+        Los Pugs y Bulldogs Franceses se han convertido en razas muy queridas debido a su comportamiento amigable,
+        apariencia tierna y facilidad de adaptación. Muchas familias consideran a sus mascotas como parte fundamental del hogar.
+      </p>
+
+      <p>
+        Actualmente, la tenencia responsable de mascotas es un tema importante. Esto incluye brindar atención veterinaria,
+        alimentación adecuada, ejercicio, higiene y un ambiente seguro para garantizar su bienestar y calidad de vida.
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    <div style="margin-bottom: 15px; font-size: 1.1rem;">🐶 Pugs & Bulldogs Franceses 🐶</div>
+    <p>Proyecto DevOps en AWS | Docker | Ubuntu Server | 2026</p>
+  </footer>
+
+</body>
+</html>
